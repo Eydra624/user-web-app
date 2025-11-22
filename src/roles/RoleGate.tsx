@@ -5,7 +5,7 @@ export default function RoleGate({
   allowed,
   children,
 }: {
-  allowed: ("ADMIN" | "SUPER_ADMIN")[];
+  allowed: ("admin" | "super_admin")[];
   children: ReactNode;
 }) {
   const { role } = useAuth();

@@ -5,7 +5,7 @@ export default function Login() {
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  const handleLogin = (role: "admin" | "super-admin") => {
+  const handleLogin = (role: "admin" | "super_admin") => {
     login(role);
     navigate("/dashboard");
   };
@@ -22,7 +22,7 @@ export default function Login() {
       </button>
 
       <button
-        onClick={() => handleLogin("super-admin")}
+        onClick={() => handleLogin("super_admin")}
         className="px-4 py-2 bg-green-600 text-white rounded"
       >
         Login as Super Admin

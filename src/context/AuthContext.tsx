@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 
-type UserRole = "admin" | "super-admin" | null;
+type UserRole = "admin" | "super_admin" | null;
 
 interface AuthContextType {
   isAuthenticated: boolean;
